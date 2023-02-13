@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            http-equiv="X-UA-Compatible"
+            content="IE=edge"
+        />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        />
+        <link rel="icon" href="./favicons/pokeball.png" />
+        <title>Pokédex</title>
+        <link rel="stylesheet" href="./css/style.css" />
+    </head>
+    <body>
+        <script src="./js/script.js" defer></script>
+        <div class="container">
+            <div class="music">
+                <div class="title">Music Name</div>
+                <div class="player">
+                    <audio src=""></audio>
+                    <div class="btns">
+                        <div class="prev icon">
+                            <ion-icon
+                                name="play-back-outline"
+                            ></ion-icon>
+                        </div>
+                        <div class="playpause icon">
+                            <ion-icon
+                                name="play-outline"
+                            ></ion-icon>
+                        </div>
+                        <div class="next icon">
+                            <ion-icon
+                                name="play-forward-outline"
+                            ></ion-icon>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <main>
+                <img
+                    src=""
+                    alt="pokemon"
+                    class="pokemon-img"
+                />
+                <h1 class="pokemon-data">
+                    <span class="pokemon-number"></span> -
+                    <span class="pokemon-name"></span>
+                </h1>
+                <form class="form">
+                    <input
+                        type="search"
+                        class="input-search"
+                        placeholder="name or number"
+                        required
+                    />
+                </form>
+                <div class="buttons">
+                    <button class="button" id="btn-prev">
+                        &lt; Prev
+                    </button>
+                    <button class="button" id="btn-next">
+                        Next &gt;
+                    </button>
+                </div>
+                <img
+                    src="./images/pokedex.png"
+                    alt="pokedex"
+                    class="pokedex"
+                />
+            </main>
+        </div>
+        <script
+            type="module"
+            src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+        ></script>
+        <script
+            nomodule
+            src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+        ></script>
+    </body>
+</html>

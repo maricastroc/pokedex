@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Oxanium", cursive;
+}
+
+body {
+    text-align: center;
+    background-image: url(../images/background-img.jpg);
+    background-size: cover;
+    background-position: center;
+    max-height: 100vh;
+}
+
+.container {
+    padding-top: 1rem;
+    max-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.music {
+    position: relative;
+    place-items: center;
+    width: 350px;
+    height: 96px;
+    box-shadow: inset 10px 10px 20px rgb(57, 57, 57),
+        inset -10px -10px 20px rgba(27, 27, 27, 0.1);
+    padding: 40px;
+    padding-top: 10px;
+    border-radius: 35px;
+    background-color: #2e2e2e;
+}
+
+.title {
+    font-family: "Oxanium";
+    font-size: 1.1rem;
+    color: rgb(188, 188, 188);
+    font-weight: 500;
+    display: inline-flex;
+    padding: 6px;
+    text-align: center;
+    margin-top: 0px;
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.5),
+        inset -5px -5px 10px rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+
+.player {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    display: grid;
+    place-items: center;
+    margin-top: 5px;
+}
+
+.btns {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.icon {
+    position: absolute;
+    font-size: 1.6em;
+    color: #777;
+    width: 35px;
+    height: 35px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5),
+        -2px -2px 3px rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+}
+.icon:active {
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.5),
+        inset -2px -2px 3px rgba(255, 255, 255, 0.1);
+    color: rgb(255, 255, 255);
+}
+
+.icon.active {
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.5),
+        inset -2px -2px 3px rgba(255, 255, 255, 0.1);
+    color: rgb(255, 255, 255);
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+main {
+    display: inline-block;
+    padding: 20px;
+    padding-top: 15px;
+    position: relative;
+}
+
+.pokedex {
+    width: 100%;
+    max-width: 380px;
+}
+
+.pokemon-img {
+    position: absolute;
+    bottom: 55%;
+    left: 50%;
+    transform: translate(-63%, 20%);
+    height: 18%; /*referente ao tamanho da imagem, e não da div!*/
+}
+
+.pokemon-data {
+    position: absolute;
+    font-size: clamp(
+        8px,
+        4vw,
+        25px
+    ); /*valor mínimo, default e valor máximo - fonte responsiva*/
+    font-weight: 600;
+    color: rgb(158, 158, 158);
+    top: 54.5%;
+    right: 27%;
+    display: flex;
+}
+
+.pokemon-name {
+    color: rgb(99, 99, 99);
+    text-transform: capitalize; /*deixa a primeira letra da string maiúscula*/
+}
+
+
+
+.form {
+    position: absolute;
+    width: 65%;
+    top: 65%;
+    left: 13.5%;
+}
+
+.input-search {
+    width: 100%;
+    padding: 4%;
+    outline: none;
+    border: 2px solid #333;
+    border-radius: 5px;
+    font-weight: 600;
+    color: #3a444d;
+    font-size: clamp(8px, 5vw, 1rem);
+    cursor: pointer;
+    box-shadow: -3px 4px 0 #888, -5px 7px 0 #3a444d; /*x y tamanho(desfoque) cor*/
+}
+
+.buttons {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    width: 65%;
+    transform: translate(-57%, 0);
+    display: flex;
+    gap: 20px;
+}
+
+.button {
+    width: 50%;
+    padding: 4%;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    font-size: clamp(8px, 5vw, 1rem);
+    font-weight: 600;
+    color: white;
+    background-color: #444;
+    box-shadow: -2px 3px 0 #222, -4px 6px 0 #000;
+    cursor: pointer;
+}
+
+/*active: é uma pseudoclass do button: efeito aparece quando o button é pressionado*/
+/*box-shadow: inset - borda interna*/
+.button:active {
+    box-shadow: inset -4px 4px 0 #000;
+    font-size: 0.9rem;
+}
