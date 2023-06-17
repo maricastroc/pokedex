@@ -7,7 +7,7 @@ A simple Pokémon catalogue, built JavaScript and PokéAPI.
 
 ## 📌 What did I learn?
 
-This was my first project developed using an API, providing me with the opportunity to work with requests, data rendering, and data processing.
+This was an excellent opportunity to practice my Logic programming and DOM manipulation, as well as my ability to create my own designs by exploiting my CSS skills.
 
 ## 💻 My Process
 ### Built with:
@@ -21,7 +21,7 @@ This was my first project developed using an API, providing me with the opportun
 > Clone the repository:
 
 ```bash
-git clone https://github.com/maricastroc/pokedex
+git clone https://github.com/maricastroc/matching-game
 ```
 
 > Make sure you have the Live Server extension installed. If not, you can install it from the VSCode marketplace. Go to the Extensions view in VSCode (click on the square icon on the left sidebar) and search for "Live Server". Install the extension provided by Ritwick Dey.
